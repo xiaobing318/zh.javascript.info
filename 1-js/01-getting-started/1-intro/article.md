@@ -6,12 +6,29 @@
 
 
 让我们来看看 JavaScript 有什么特别之处，我们可以用它实现什么，以及哪些其他技术可以与其搭配产生奇妙的效果。
+```c
+/*
+Notes:杨小兵-2025-02-24
+
+1、问题1：可以使用JavaScript实现什么？
+2、问题2：其他哪些技术可以同JavaScript一起作用产生效果？
+*/
+```
 
 ## 什么是 JavaScript？
 
 *JavaScript* 最初被创建的目的是“使网页更生动”。
 
 这种编程语言写出来的程序被称为 **脚本**。它们可以被直接写在网页的 HTML 中，在页面加载的时候自动执行。
+```c
+/*
+Notes:杨小兵-2025-02-24
+
+1、JavaScript写出来的程序被称之为脚本。
+2、JavaScript脚本可以直接写在HTML中。
+3、写在HTML中的JavaScript脚本在页面被加载的时候将会被自动执行（浏览器中的JavaScript解释器）。
+*/
+```
 
 脚本被以纯文本的形式提供和执行。它们不需要特殊的准备或编译即可运行。
 
@@ -22,8 +39,23 @@ JavaScript 在刚诞生的时候，它的名字叫 "LiveScript"。但是因为�
 
 随着 JavaScript 的发展，它已经成为了一门完全独立的语言，并且也拥有了自己的语言规范 [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript)。现在，它和 Java 之间没有任何关系。
 ```
+```c
+/*
+Notes:杨小兵-2025-02-24
+
+1、JavaScript刚开始的时候为了同Java沾上一点关系，随着之后的发展这两者已经不相关了。
+*/
+```
 
 如今，JavaScript 不仅可以在浏览器中执行，也可以在服务端执行，甚至可以在任意搭载了 [JavaScript 引擎](https://en.wikipedia.org/wiki/JavaScript_engine) 的设备中执行。
+```c
+/*
+Notes:杨小兵-2025-02-24
+
+1、最为流行的方式就是在浏览器中直接运行。
+2、如果想要在其他地方运行那么先决条件就是对应的设备中存在JavaScript引擎。
+*/
+```
 
 浏览器中嵌入了 JavaScript 引擎，有时也称作“JavaScript 虚拟机”。
 
@@ -34,6 +66,13 @@ JavaScript 在刚诞生的时候，它的名字叫 "LiveScript"。但是因为�
 - ……还有其他一些代号，像 "Chakra" 用于 IE，"JavaScriptCore"、"Nitro" 和 "SquirrelFish" 用于 Safari，等等。
 
 上面这些术语很容易记住，因为它们经常出现在开发者的文章中。我们也会用到这些术语。例如，如果“V8 支持某个功能”，那么我们可以认为这个功能大概能在 Chrome、Opera 和 Edge 中正常运行。
+```c
+/*
+Notes:杨小兵-2025-02-24
+
+1、JavaScript引擎不止一种，上述罗列出来的就是不同的JavaScript引擎。
+*/
+```
 
 ```smart header="引擎是如何工作的？"
 
@@ -113,6 +152,13 @@ JavaScript 是将这三件事结合在一起的唯一的浏览器技术。
 
 - [CoffeeScript](https://coffeescript.org/) 是 JavaScript 的一种语法糖。它引入了更加简短的语法，使我们可以编写更清晰简洁的代码。通常，Ruby 开发者喜欢它。
 - [TypeScript](https://www.typescriptlang.org/) 专注于添加“严格的数据类型”以简化开发，以更好地支持复杂系统的开发。由微软开发。
+  ```c
+  /*
+  Notes:杨小兵-2025-02-24
+
+  1、这个内容将会在llama.cpp学习中用到，所以需要留意。
+  */
+  ```
 - [Flow](https://flow.org/) 也添加了数据类型，但是以一种不同的方式。由 Facebook 开发。
 - [Dart](https://www.dartlang.org/) 是一门独立的语言。它拥有自己的引擎，该引擎可以在非浏览器环境中运行（例如手机应用），它也可以被编译成 JavaScript。由 Google 开发。
 - [Brython](https://brython.info/) 是一个 Python 到 JavaScript 的转译器，让我们可以在不使用 JavaScript 的情况下，以纯 Python 编写应用程序。
